@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HDYLD3JE31"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "G-HDYLD3JE31");
+    </script>
+    <title>CNIT 132 Assignments</title>
+    <meta charset="utf-8">
+    <meta name="description" content="CNIT 132 Contact Me">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="grid">
+        <header id="grid-area-header">
+            <h1>Contact Me</h1>
+        </header>
+        <aside id="grid-area-menu">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="assignments.html">Assignments</a></li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+        </aside>
+        <main id="grid-area-content">
+            <p>
+                You can contact me by using the information in the footer part of the
+                page or filling out the form below.
+            </p>
+            <form action="#">
+                <fieldset>
+                    <legend>Your Contact Info:</legend>
+                    <label for="name">Full Name:</label><br>
+                    <input type="text" id="name" name="name" required><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br>
+                    <label for="comments">Comments:</label><br>
+                    <textarea name="comments" id="comments" cols="36" rows="10"></textarea><br>
+                    <input type="submit" value="Submit" class="btn">
+                    <input type="reset" value="Clear" class="btn">
+                </fieldset>
+            </form>
+        </main>
+        <footer id="grid-area-footer">
+            <p>
+                Email me at
+                <a href="mailto:pli80@mail.ccsf.edu">pli80@mail.ccsf.edu</a>
+            </p>
+            <p id="copyright">Copyright &copy; 2023 LI</p>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap');
+body{
+    background-color: brown;
+    font: larger 'Hind Siliguri', sans-serif;
+}
+/* grid layout */
+#grid {
+    display: grid;
+    grid-gap: 5px;
+    /* short hand for grid-template-rows and grid-template-columns */
+    /* grid-template: 10% 80% 5% / 20% 77%;  */
+    grid-template-areas: "header header" "mnu cont" "ft ft";
+    margin: 0 auto;
+    width: 95%;
+    background-color:rgb(255, 244, 250);
+    color: rgb(110, 0, 0);
+    background-image: linear-gradient(rgb(255, 244, 250), rgb(255, 244, 250), white, rgb(255, 244, 250));
+    /* box-shadow effect */
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 10px 10px rgb(99, 0, 0);
+}
+#grid-area-header{
+    grid-area: header;
+    font-weight:bolder;
+    text-align: center;
+    /* background-color: hsl(170, 96%, 80%); */
+}
+#grid-area-menu{
+    grid-area: mnu;
+    width: 180px;
+    /* background-color: #89ddf9; */
+    padding: 10px;
+}
+#grid-area-content{
+    grid-area: cont;
+    /* background-color: #feffb2; */
+    background-color: white;
+    padding: 0 20px; 
+}
+#grid-area-footer{
+    grid-area: ft;
+    clear:both;
+    padding: 20px; 
+    text-align: center;
+}
+/* nav */
+nav ul{
+    list-style-type: none; 
+    margin: 50px auto;
+}
+nav li{
+    margin-bottom: 1.5rem;
+}
+nav a{
+    text-decoration: none;
+    color: rgb(110, 0, 0);
+    font-weight: bold;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 0.3rem; 
+}
+nav a:hover{
+    background-color: rgb(200, 0, 0);
+    color: white;
+}
+/* figure */
+figure{
+    margin:1rem;
+    text-align: center;
+}
+figcaption{
+    font-size: small;
+}
+#profile{
+    border-radius: 50%;
+    mix-blend-mode: color-burn;
+}
+.two-img-inline {
+    width:  49%;
+    height: 100%;
+    object-fit: cover;
+}
+/* copyright */
+#copyright{
+    text-align: center;
+}
+/* form and input */
+form {
+    margin: auto;
+    text-align: left;
+    width:fit-content;
+    padding: 1rem;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 10px 10px rgb(99, 0, 0);
+}
+input{
+    font-size: larger;
+    margin-bottom: .5rem;
+    border: none;
+    border-bottom: .1rem solid rgb(110, 0, 0);
+}
+/* button */
+.btn{
+    background-color: rgb(110, 0, 0);
+    color: rgb(255, 244, 250);
+}
+.btn:hover{
+    background-color: rgb(200, 0, 0);
+}
+@media print{ 
+    #grid-area-footer, #grid-area-menu, figure { display: none; }
+    #grid-area-content { margin-left: 5px; }
+    body, #wrapper { background-color: white; color:black; }
+    #wrapper { width: 100% }
+} 
+/* RWD for extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 1000px) {
+    #grid {
+        grid-template-areas: "header header" "mnu mnu" "cont cont" "ft ft";
+    }
+    #grid-area-header {
+        height: 3rem;
+    }
+    #grid-area-menu {
+        width: 100%;
+        padding: 0;
+        height: 6rem;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    form {
+        width: 90%;
+    }
+    input[type=text]{
+        width: 90%;
+    }
+    input[type=email]{
+        width: 90%;
+    }
+    textarea{
+        width: 90%;
+    }
+  }
