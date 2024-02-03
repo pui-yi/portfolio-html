@@ -1,18 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
 
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HDYLD3JE31"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-HDYLD3JE31');
+    </script>
+    <title>CNIT-132 - Final Project</title>
+    <meta charset="utf-8">
+    <meta name="description"
+        content="CNIT 132 final-project, a revise of miniproject1, with grid layout, favicon and responsive web design (RWD)">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    
-    <main>
-        <h1>Main</h1>
-        <a href="trip.html">My Trip</a>
-        <a href="recipe.html">My Recipe</a>
-    </main>
-    
+    <div id="grid">
+
+        <header id="grid-area-header">
+            <h1>Peiyi Li - CNIT 132A</H1>
+        </header>
+
+        <aside id="grid-area-menu">
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li><a href="assignments.html">Assignments</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main id="grid-area-content">
+            <section>
+                <h2>About Me</h2>
+                <p>I'm Peiyi, a front-end developer. I generally use VS Code and Chrome to work on my web dev projects.
+                    My experience in web development started with me joining a Bootcamp to introduce myself to front-end
+                    development (HTML and CSS). I found myself enjoying the achievement of building a website. So I
+                    decided to pursue further into this field by earning a certificate from a community college.</p>
+            </section>
+            <section>
+                <h2>About Web Development</h2>
+                <p><a href="https://www.tesla.com/" target="_blank" rel="noopener noreferrer">One of my favorite
+                        page</a> is concise and straightforward. It catches reader's attention by displaying its main
+                    products in screen size. It makes the page appear clean and simple.</p>
+                <p>You may want to know <a
+                        href="https://www.techopedia.com/2/31579/networks/a-brief-history-of-web-development#the-turn-of-the-century"
+                        target="_blank" rel="noopener noreferrer">a brief history of web development</a>.</p>
+                <hr>
+                <h3>Tips For Web Developer</h3>
+                <ul>
+                    <li>Start your adventures from <a href="https://www.w3schools.com/" target="_blank"
+                            rel="noopener noreferrer">w3schools</a>: a convenient site for you to learn and practice.
+                    </li>
+                    <li><a href="https://www.traversymedia.com/guide" target="_blank" rel="noopener noreferrer">Traversy
+                            Media</a>: free and systematic crash courses for beginners to learn web development via
+                        videos.</li>
+                    <li>Make use of <a href="https://getbootstrap.com/" target="_blank"
+                            rel="noopener noreferrer">Bootstrap</a> libraries: a powerful method that helps you build
+                        nice websites in a shorter time.</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer id="grid-area-footer">
+            <p id="copyright">Copyright &copy; 2023 LI</p>
+        </footer>
+
+    </div>
 </body>
+
 </html>
